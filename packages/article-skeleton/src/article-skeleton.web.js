@@ -81,7 +81,9 @@ class ArticleSkeleton extends Component {
       headline,
       topics,
       relatedArticleSlice,
-      template
+      template,
+      savingEnabled,
+      sharingEnabled
     } = article;
 
     const { articleWidth, isSticky } = this.state;
@@ -129,24 +131,26 @@ class ArticleSkeleton extends Component {
                           topicsAllowed={user.isLoggedIn}
                           width={articleWidth}
                         />
-                        <SaveShareContainer isSticky={isSticky}>
-                          <SaveShareRefContainer isSticky={isSticky}>
-                            <div
-                              ref={el => {
-                                this.sticky = el;
-                              }}
-                            >
-                              <SaveAndShareBar
+                        {(savingEnabled || sharingEnabled) && (
+                          <SaveShareContainer isSticky={isSticky}>
+                            <SaveShareRefContainer isSticky={isSticky}>
+                              <div
+                                ref={el => {
+                                  this.sticky = el;
+                                }}
+                              >
+                                <SaveAndShareBar
                                 articleId={articleId}
                                 articleHeadline={headline}
                                 articleUrl={url}
                                 onCopyLink={() => {}}
                                 onSaveToMyArticles={() => {}}
                                 onShareOnEmail={() => {}}
-                              />
-                            </div>
-                          </SaveShareRefContainer>
-                        </SaveShareContainer>
+                                />
+                              </div>
+                            </SaveShareRefContainer>
+                          </SaveShareContainer>
+                        )}
                         <BodyContainer>
                           <ArticleBody
                             content={newContent}
