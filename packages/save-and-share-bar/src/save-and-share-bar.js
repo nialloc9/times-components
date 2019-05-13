@@ -48,7 +48,7 @@ class SaveAndShareBar extends Component {
               />
             </BarItem>
             <BarItem
-            onPress={onShareOnTwitter}
+              onPress={onShareOnTwitter}
               target="_blank"
               url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
             >

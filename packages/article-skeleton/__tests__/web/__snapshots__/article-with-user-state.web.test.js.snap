@@ -12,6 +12,13 @@ exports[`Article with user state Render full article when user is logged in 1`] 
   </div>
   <div>
     <div>
+      <div>
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+    <div>
       <p>
         <span>
           T
@@ -290,6 +297,8 @@ exports[`Article with user state Render full article when user is logged in 1`] 
                   },
                   "publicationName": "TIMES",
                   "publishedTime": "2015-03-23T19:39:39.000Z",
+                  "savingEnabled": true,
+                  "sharingEnabled": true,
                   "shortHeadline": "Headline",
                   "shortIdentifier": "2k629tpvh",
                   "slug": "this-is-slug",
@@ -334,6 +343,13 @@ exports[`Article with user state Render teaser article when user is not logged i
     />
   </div>
   <div>
+    <div>
+      <div>
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
     <div>
       <p>
         <span>
@@ -613,6 +629,8 @@ exports[`Article with user state Render teaser article when user is not logged i
                   },
                   "publicationName": "TIMES",
                   "publishedTime": "2015-03-23T19:39:39.000Z",
+                  "savingEnabled": true,
+                  "sharingEnabled": true,
                   "shortHeadline": "Headline",
                   "shortIdentifier": "2k629tpvh",
                   "slug": "this-is-slug",
@@ -657,6 +675,13 @@ exports[`Article with user state Render teaser article when user is null 1`] = `
     />
   </div>
   <div>
+    <div>
+      <div>
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
     <div>
       <p>
         <span>
@@ -934,6 +959,8 @@ exports[`Article with user state Render teaser article when user is null 1`] = `
                   },
                   "publicationName": "TIMES",
                   "publishedTime": "2015-03-23T19:39:39.000Z",
+                  "savingEnabled": true,
+                  "sharingEnabled": true,
                   "shortHeadline": "Headline",
                   "shortIdentifier": "2k629tpvh",
                   "slug": "this-is-slug",
