@@ -63,6 +63,8 @@ export default () => {
           onShareOnEmail={onShareOnEmail}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
+          sharingEnabled
+          savingEnabled
         />
       );
     });
